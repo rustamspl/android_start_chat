@@ -3,4 +3,5 @@
     <string name="usage_text">Use Open with... for phone numbers to open Whatsapp chat.</string>
     <string name="settings_dsc">The default calling app can be reset in the settings:</string>
     <string name="app_settings">App Settings</string>
+    <string name="txtCredits">https://github.com/rustamspl/android_start_chat</string>
 </resources>

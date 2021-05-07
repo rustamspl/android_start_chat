@@ -4,4 +4,5 @@
     <string name="usage_text">Используйте Открыть с помощью ... для номеров телефонов, чтобы открыть чат Whatsapp.</string>
     <string name="settings_dsc">Приложение по умолчанию для звонков можно сбросить в настройках:</string>
     <string name="app_settings">Настройки приложения</string>
+    <string name="txtCredits">github.com</string>
 </resources>
