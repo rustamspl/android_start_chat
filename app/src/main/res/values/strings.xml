@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">StartChat</string>
+    <string name="usage_text">Use Open with... for phone numbers to open Whatsapp chat.</string>
+    <string name="settings_dsc">The default calling app can be reset in the settings:</string>
+    <string name="app_settings">App Settings</string>
 </resources>

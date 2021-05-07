@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StartChat</string>
+    <string name="usage_text">Используйте Открыть с помощью ... для номеров телефонов, чтобы открыть чат Whatsapp.</string>
+    <string name="settings_dsc">Приложение по умолчанию для звонков можно сбросить в настройках:</string>
+    <string name="app_settings">Настройки приложения</string>
+</resources>
