@@ -30,9 +30,11 @@ public class MainActivity extends Activity {
             Log.d("intent received",intent.getData().toString());
             String phoneNumber = intent.getData().toString(); //contains tel:phone_no
             phoneNumber = phoneNumber.substring(4);
-            Log.d("intent received","Received phone number : "+phoneNumber);
+            String phoneNumber1 =  phoneNumber.replaceAll("^8","+7")
+                    .replaceAll("[^+0-9]","");
+            Log.d("intent received","Received phone number : "+phoneNumber + " ; "+phoneNumber1);
 
-            String url = "https://wa.me/"+phoneNumber;
+            String url = "https://wa.me/"+phoneNumber1;
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
