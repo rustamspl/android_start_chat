@@ -5,7 +5,7 @@ android {
     defaultConfig {
         applicationId "rustamspl.github.io.startchat"
         minSdkVersion 29
-        targetSdkVersion 30
+        targetSdkVersion 33
         versionCode 4
         versionName "1.3"
     }
