@@ -1,5 +1,10 @@
 # android_start_chat
-Whatsapp chat launcher
+
+Whatsapp chat launcher 1.3
+
+If enabled - redirects all outgoing calls to Whatsapp
+
+Requirements: Android 10+
 
 ## Donations
 To support this project, you can make a donation :  
