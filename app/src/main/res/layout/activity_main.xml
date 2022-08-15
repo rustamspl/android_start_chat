@@ -8,40 +8,50 @@
 
     tools:context=".MainActivity"
     android:background="@color/bgcol"
+
     >
 
-    <TextView
+
+    <Switch
+        android:id="@+id/swRedirect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/usage_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/txtcolor"
-        android:padding="10dp"
+        android:text="Redirect calls to Whatsapp"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
         />
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/usage_text"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:textColor="@color/txtcolor"-->
+<!--        android:padding="10dp"-->
+<!--        />-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/settings_dsc"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/txtcolor"
-        android:padding="10dp"
-        />
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/settings_dsc"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:textColor="@color/txtcolor"-->
+<!--        android:padding="10dp"-->
+<!--        />-->
 
-    <!--https://github.com/rustamspl/android_start_chat-->
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:textAlignment="center"
-        android:layout_height="wrap_content"
-        android:text="@string/app_settings"
-        />
+<!--    &lt;!&ndash;https://github.com/rustamspl/android_start_chat&ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:textAlignment="center"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/app_settings"-->
+<!--        />-->
 
     <TextView android:layout_width="match_parent"
         android:layout_height="wrap_content" android:text="@string/txtCredits"
