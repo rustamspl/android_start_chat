@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">StartChat</string>
     <string name="txtCredits">https://github.com/rustamspl/android_start_chat</string>
-    <string name="redirect_calls_to_whatsapp">Redirect calls to Whatsapp</string>
+    <string name="app_enabled">App enabled</string>
+    <string name="open_in_ws">Open in Whatsapp?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="if_no"> (retry if no)</string>
 </resources>

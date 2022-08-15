@@ -16,7 +16,7 @@
         android:id="@+id/swRedirect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/redirect_calls_to_whatsapp"
+        android:text="@string/app_enabled"
         android:textColor="@color/txtcolor"
         android:layout_margin="10dp"
         />

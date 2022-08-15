@@ -5,22 +5,25 @@ import android.app.role.RoleManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-    public static final String DO_REDIRECT ="DO_REDIRECT" ;
+    public static final String APP_ENABLED ="APP_ENABLED" ;
     private Switch swRedirect;
 
     public static SharedPreferences getPrefs(Context ctx){
         return  ctx.getSharedPreferences(
                 ctx.getPackageName() + "_preferences", Context.MODE_PRIVATE);
     }
-    public static  boolean isRedirectOn(Context ctx){
-       return getPrefs(ctx).getBoolean(DO_REDIRECT,false);
+    public static  boolean isAppEnabled(Context ctx){
+       return getPrefs(ctx).getBoolean(APP_ENABLED,false);
     }
 
     @Override
@@ -29,33 +32,48 @@ public class MainActivity extends Activity {
         Context ctx=this;
         setContentView(R.layout.activity_main);
         swRedirect=findViewById(R.id.swRedirect);
-        swRedirect.setChecked(isRedirectOn(ctx));
+        swRedirect.setChecked(isAppEnabled(ctx));
         swRedirect.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 
-                getPrefs(ctx).edit().putBoolean(DO_REDIRECT,b).commit();
+                getPrefs(ctx).edit().putBoolean(APP_ENABLED,b).commit();
             }
         });
 
+
+        checkPermission();
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        checkPermission();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        checkPermission();
+    }
+
+    public void checkPermission() {
         if (!isRedirection()){
             roleAcquire(RoleManager.ROLE_CALL_REDIRECTION);
         }
 
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (!Settings.canDrawOverlays(this)) {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                        Uri.parse("package:" + getPackageName()));
+                startActivityForResult(intent, 2);
+            }
+        }
     }
 
-//    @Override
-//    protected void onSaveInstanceState( Bundle outState) {
-//        super.onSaveInstanceState(outState);
-//        outState.putBoolean(DO_REDIRECT, swRedirect.isChecked());
-//    }
-//
-//    @Override
-//    protected void onRestoreInstanceState( Bundle savedInstanceState) {
-//        super.onRestoreInstanceState(savedInstanceState);
-//        swRedirect.setChecked(savedInstanceState.getBoolean(DO_REDIRECT,false));
-//    }
+
 
     private void roleAcquire(String roleName) {
         RoleManager roleManager;
