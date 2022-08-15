@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -14,18 +14,23 @@
 
     <Switch
         android:id="@+id/swRedirect"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/app_enabled"
         android:textColor="@color/txtcolor"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
+        android:textSize="30dp"
         />
 
-    <TextView android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:text="@string/txtCredits"
-        android:autoLink="web" android:id="@+id/infoTxtCredits"
-        android:paddingTop="50dp"  android:layout_margin="10dp"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtCredits"
+        android:autoLink="web"
+        android:id="@+id/infoTxtCredits"
+        android:paddingTop="50dp"
+        android:layout_margin="20dp"
         android:layout_centerInParent="true"
-        android:linksClickable="true"></TextView>
+        android:linksClickable="true" />
 
 </LinearLayout>
