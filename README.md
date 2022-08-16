@@ -8,6 +8,8 @@ When StartChat  enabled it offers to open WhatsApp chat when calling a number.
 
 Requirements: Android 10+
 
+[Old version for Android 9](https://github.com/rustamspl/android_start_chat/releases/tag/1.0.5)
+
 
 ## Donations
 To support this project, you can make a donation :  
