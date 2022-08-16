@@ -6,6 +6,9 @@ Whatsapp requires you to save a contact before starting a conversation, which is
 If you face such a situation - StartChat can help you.
 When StartChat  enabled it offers to open WhatsApp chat when calling a number.
 
+
+ ![screenshots](https://github.com/rustamspl/android_start_chat/blob/master/img/screen.png)
+
 ## Download
 
 [APK v1.3.1 for Android 10+](https://github.com/rustamspl/android_start_chat/releases/download/1.3.1/StartChat_1.3.1.apk)
