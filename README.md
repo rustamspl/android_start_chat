@@ -3,7 +3,9 @@
 Whatsapp chat launcher 
 
 Whatsapp requires you to save a contact before starting a conversation, which is inconvenient when the contact is only needed once.
+
 If you face such a situation - StartChat can help you.
+
 When StartChat  enabled it offers to open WhatsApp chat when calling a number.
 
 
