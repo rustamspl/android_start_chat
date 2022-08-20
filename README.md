@@ -13,7 +13,7 @@ When StartChat  enabled it offers to open WhatsApp chat when calling a number.
 
 ## Download
 
-[![Google Play](https://github.com/rustamspl/android_start_chat/blob/master/img/googleplay.png)](https://play.google.com/store/apps/details?id=rustamspl.github.io.startchat)
+[![Google Play](https://github.com/rustamspl/android_start_chat/blob/master/img/googleplay1.png)](https://play.google.com/store/apps/details?id=rustamspl.github.io.startchat)
 
 
 [APK v1.3.1 for Android 10+](https://github.com/rustamspl/android_start_chat/releases/download/1.3.1/StartChat_1.3.1.apk)
