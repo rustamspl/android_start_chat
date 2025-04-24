@@ -3,7 +3,7 @@
     <string name="app_name">StartChat</string>
     <string name="txtCredits">https://github.com/rustamspl/android_start_chat</string>
     <string name="app_enabled">Включить</string>
-    <string name="open_in_ws">Открыть в Whatsapp?</string>
+    <string name="open_in_ws">Открыть в мессенджере? (откроется в другом приложении)</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
     <string name="if_no"> (Если нет - повторите вызов)</string>
