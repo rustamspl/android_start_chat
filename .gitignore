@@ -98,3 +98,4 @@ lint/tmp/
 # lint/reports/
 /tmp
 /app/release
+tmpimg/*
