@@ -6,8 +6,6 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        // Оставляю вашу версию как есть; при необходимости поднимите до AGP 9.1.x
-        // (но тогда обычно потребуется и Gradle версии из матрицы совместимости AGP).
         classpath 'com.android.tools.build:gradle:9.0.1'
     }
 }
@@ -19,7 +17,6 @@ allprojects {
     }
 }
 
-// Gradle 9+: предпочтительнее registered task API
 tasks.register("clean", Delete) {
     delete(rootProject.layout.buildDirectory)
 }
